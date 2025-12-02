@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | BOOKVILLE</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="uv-header-wrap">
+        <div class="uv-header-top">
+            <span class="uv-header-phone">+7 999 140 00 00</span>
+
+            <a href="./index1.html" class="uv-header-logo">
+                <img src="/img/logo.png" alt="Bookville">
+            </a>
+
+            <div class="uv-header-icons">
+                <i class="fas fa-search"></i>
+                <a href="./favorit.html"><i class="far fa-heart"></i></a>
+                <a href="./korzina.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+
+        <nav class="uv-main-nav">
+            <ul class="uv-nav-list">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="line wide"></div>
+                        <div class="line medium"></div>
+                        <div class="line wide"></div>
+                    </button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="column-layout">
+                            <div class="column">
+                                <h4>Книги</h4>
+                                <a href="#" class="column-item">Художественная литература</a>
+                                <a href="#" class="column-item">Саморазвитие</a>
+                                <a href="#" class="column-item">Психология</a>
+                                <a href="#" class="column-item">Философия</a>
+                                <a href="#" class="column-item">Здоровье</a>
+                                <a href="#" class="column-item">Эксклюзивные издания</a>
+                                <a href="#" class="column-item">Детские</a>
+                                <a href="#" class="column-item sub-item">– для 0 - 3 лет</a>
+                                <a href="#" class="column-item sub-item">– для 3 - 7 лет</a>
+                                <a href="#" class="column-item sub-item">– для 7 - 10 лет</a>
+                                <a href="#" class="column-item">Книги для подростков</a>
+                                <a href="#" class="column-item">Взрослые</a>
+                                <a href="#" class="column-item">Подарочные наборы</a>
+                            </div>
+
+                            <div class="column">
+                                <h4>Канцелярия</h4>
+                                <a href="#" class="column-item">Канцелярские товары</a>
+                                <a href="#" class="column-item">Блокноты</a>
+                                <a href="#" class="column-item">Тетради</a>
+                                <a href="#" class="column-item">Планеры и трекеры</a>
+                                <a href="#" class="column-item">Ручки</a>
+                                <a href="#" class="column-item">Карандаши и фломастеры</a>
+                                <a href="#" class="column-item">Сертификаты</a>
+                            </div>
+
+                            <div class="column">
+                                <h4>Упаковка</h4>
+                                <a href="#" class="column-item">Упаковочная бумага</a>
+                                <a href="#" class="column-item">Коробки</a>
+                                <a href="#" class="column-item">Ленты</a>
+                                <a href="#" class="column-item">Конверты</a>
+                                <a href="#" class="column-item">Открытки</a>
+                                <a href="#" class="column-item">Пакеты</a>
+                                <a href="#" class="column-item">Подарочный декор</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li><a href="./in2.html">Подразделы</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./event.html">Мероприятия</a></li>
+                <li><a href="./discount.html">Скидки</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./order.html">Доставка и оплата</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+
+            <div class="uv-nav-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+
+                <div class="uv-lang-select">
+                    RU <i class="fas fa-angle-down"></i>
+
+                    <ul class="lang-dropdown">
+                        <li><a href="?lang=ru">RU</a></li>
+                        <li><a href="?lang=kg">KG</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="uv-hero-slider">
+            <div class="uv-slider-container">
+                <div class="uv-slide-item">
+                    <img src="./img/Mask Group.png" class="uv-slide-img" alt="Баннер">
+                    <i class="fas fa-chevron-left uv-slide-arrow uv-slide-arrow-left"></i>
+                    <i class="fas fa-chevron-right uv-slide-arrow uv-slide-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANTAGES -->
+        <section class="uv-advantages-sec">
+            <div class="uv-advantages-list">
+                <div class="uv-adv-item">
+                    <i class="fas fa-box-open uv-adv-icon"></i>
+                    <p class="uv-adv-text">Консультация
+                        книжного сомелье</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <i class="fas fa-truck uv-adv-icon"></i>
+                    <p class="uv-adv-text">Доставка и оплата</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <i class="fas fa-gift uv-adv-icon"></i>
+                    <p class="uv-adv-text">Уникальные
+                        подборки книг</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <i class="fas fa-comment-dots uv-adv-icon"></i>
+                    <p class="uv-adv-text">Эстетическая
+                        упаковка</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT COMPANY -->
+        <section class="uv-about-sec">
+            <div class="uv-container">
+                <h1 class="uv-brand">BOOKVILLE</h1>
+
+                <h2 class="uv-about-title">О нашей компании</h2>
+
+                <div class="uv-about-columns">
+                    <p class="uv-about-col">
+                        **Наш Основательный Принцип:** Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                        accusamus totam aperiam? Nostrum quas
+                        veritatis dolore expedita necessitatibus et ratione? **Мы стремимся** к тому, чтобы каждый
+                        клиент нашел идеальную книгу.
+                    </p>
+                    <p class="uv-about-col">
+                        **Наша Миссия:** Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cumque commodi
+                        dolores cupiditate
+                        illum perferendis obcaecati iusto magni necessitatibus delectus. Мы гарантируем **высокое
+                        качество** обслуживания и широкий ассортимент.
+                    </p>
+                </div>
+                <a href="#more-info" class="uv-btn">Узнать больше</a>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="uv-products-sec">
+
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="uv-product-grid">
+
+                <!-- PRODUCT -->
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="uv-products-sec">
+
+            <h2 class="section-title">Скидки</h2>
+            <div class="uv-product-grid">
+
+                <!-- PRODUCT -->
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="uv-products-sec">
+
+            <h2 class="section-title">BOOKVILLE рекомендует</h2>
+            <div class="uv-product-grid">
+
+                <!-- PRODUCT -->
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+                <div class="uv-product-card">
+                    <div class="uv-product-img-wrap">
+                        <img src="./img/img_book.jpg" class="uv-product-img" alt="Название книги">
+                        <div class="uv-product-discount">5%</div>
+                        <div class="uv-product-icons">
+                            <i class="far fa-heart uv-product-fav"></i>
+                            <i class="fas fa-shopping-bag uv-product-archive"></i>
+                        </div>
+                    </div>
+                    <div class="uv-product-info">
+                        <p class="uv-product-title">Название книги</p>
+                        <p class="uv-product-price">790 ₽</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="uv-events-sec">
+            <div class="uv-container">
+                <h2 class="uv-events-title">Наши Мероприятия</h2>
+
+                <div class="uv-event-row">
+
+                    <div class="uv-event-image">
+                        <img src="./img/blogimg8.png" alt="Изображение мероприятия" class="uv-event-img">
+                    </div>
+
+                    <div class="uv-event-content">
+                        <h3>О наших мероприятиях</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat incididunt ut laboret. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </p>
+                        <a href="#event-details" class="uv-btn">ПОДРОБНЕЕ</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="uv-books-selection-sec">
+            <div class="uv-container">
+                <h2 class="uv-books-selection-title">Подбор книг для Вас</h2>
+
+                <div class="uv-book-selection-grid">
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/knigi-zima-670x351 1.png" alt="Обложка книги 1" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">Для уютного вечера</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/Mask Group 11.png" alt="Обложка книги 2" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">Для проактивных родителей</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/Mask Group (1).png" alt="Обложка книги 3" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">О психологии</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/Mask Group (4).png" alt="Обложка книги 4" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">Для руководителя</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/Mask Group (3).png" alt="Обложка книги 5" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">О здоровье</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                    <a href="#" class="uv-book-card">
+                        <div class="uv-card-image-wrapper">
+                            <img src="./img/Mask Group (2).png" alt="Обложка книги 6" class="uv-card-img">
+                        </div>
+                        <h3 class="uv-card-title">Для любознаек</h3>
+                        <h3>15 книг</h3>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- THEMES -->
+        <!-- <section class="uv-themes-sec">
+            <h2 class="section-title">Подборка тем</h2>
+
+
+
+
+
+
+
+
+            <a href="#" class="uv-theme-item uv-theme-wide">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Детективы для вечера</span>
+            </a>
+
+            <a href="#" class="uv-theme-item">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Для практичных родителей</span>
+            </a>
+
+            <a href="#" class="uv-theme-item">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Мотивирующие книги</span>
+            </a>
+
+            <a href="#" class="uv-theme-item">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Мечты для других</span>
+            </a>
+
+            <a href="#" class="uv-theme-item">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Любовь и отношения</span>
+            </a>
+
+            <a href="#" class="uv-theme-item">
+                <img src="/img/img_book.jpg" class="uv-theme-img" alt="">
+                <span class="uv-theme-title">Истории для детей</span>
+            </a>
+
+            </div>
+        </section> -->
+
+
+    </main>
+
+    <!-- CTA -->
+    <section class="uv-cta-sec">
+        <div class="uv-cta-box">
+            <p class="uv-cta-text">Вы можете обратиться с подбором?</p>
+            <input type="text" class="uv-cta-input" placeholder="Ваше имя">
+            <input type="text" class="uv-cta-input" placeholder="Телефон">
+            <button class="uv-cta-btn">Отправить</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="uv-footer-wrap">
+        <div class="uv-footer-grid">
+            <div class="uv-footer-logo">
+                <img src="/img/logo.png" alt="">
+            </div>
+
+            <nav class="uv-footer-nav">
+                <ul class="uv-footer-links">
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="event.html">Мероприятия</a></li>
+                    <li><a href="./discount.html">Скидки</a></li>
+                    <li><a href="./order.html">Доставка и оплата</a></li>
+                    <li><a href="./blog.html">Блог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <span class="uv-footer-phone">+7 999 140 00 00</span>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

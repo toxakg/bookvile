@@ -1,0 +1,795 @@
+/* Общие сбросы и базовые стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Максимальная ширина для контента */
+.uv-container {
+    max-width: 1200px; /* Увеличил, чтобы соответствовать ширине контента на фото */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 1.8em; /* Немного уменьшил, как на фото */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal; /* Обычный шрифт, не жирный */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+.uv-lang-select {
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    background: #fff;
+    border-radius: 6px;
+    padding: 6px 0;
+    list-style: none;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.lang-dropdown li a {
+    display: block;
+    padding: 6px 14px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lang-dropdown li a:hover {
+    background: #f0f0f0;
+}
+
+.uv-lang-select:hover .lang-dropdown {
+    display: block;
+}
+
+/* ====================== */
+/*        HEADER          */
+/* ====================== */
+
+.uv-header-wrap {
+    border-bottom: 1px solid #eee;
+}
+
+.uv-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Уменьшил вертикальный отступ */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.uv-header-phone {
+    font-size: 0.9em;
+    color: #333;
+    letter-spacing: 0.5px;
+    font-weight: bold; /* Телефон кажется жирным на фото */
+}
+
+.uv-header-logo {
+    display: flex; /* Для центрирования логотипа */
+    justify-content: center;
+    flex-grow: 1; /* Чтобы занять доступное место */
+}
+
+.uv-header-logo img {
+    height: 35px; /* Немного уменьшил логотип */
+}
+
+.uv-header-icons i {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* NAV */
+.uv-main-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 10px 15px; /* Уменьшил отступ снизу */
+}
+
+.uv-nav-list {
+    display: flex;
+    gap: 25px;
+    text-transform: uppercase; /* Все меню заглавными буквами */
+    font-size: 0.85em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.uv-nav-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uv-nav-social i {
+    color: #9c897a; /* Иконки соцсетей - акцентный цвет */
+    font-size: 1.1em;
+    margin-left: 0;
+}
+
+.uv-lang-select {
+    font-size: 0.85em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ====================== */
+/*        SLIDER          */
+/* ====================== */
+
+.uv-hero-slider {
+    position: relative;
+    max-width: 1200px; /* Ограничиваем ширину слайдера */
+    margin: 0 auto;
+}
+
+.uv-slider-container {
+    overflow: hidden; /* Скрываем излишек */
+}
+
+.uv-slide-item {
+    position: relative;
+}
+
+.uv-slide-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.uv-slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 8px; /* Немного уменьшил горизонтальный паддинг */
+    background: transparent; /* Убрал фон, как на фото */
+    color: #333; /* Цвет стрелок на фото - темный */
+    cursor: pointer;
+    font-size: 1.5em;
+    border: 1px solid #ccc; /* Добавил тонкую рамку */
+}
+
+.uv-slide-arrow-left { left: 15px; }
+.uv-slide-arrow-right { right: 15px; }
+
+/* ====================== */
+/*      ADVANTAGES        */
+/* ====================== */
+
+.uv-advantages-sec {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #fff; /* Фон белый */
+}
+
+.uv-advantages-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.uv-adv-item {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.uv-adv-icon {
+    font-size: 1.8em;
+    color: #9c897a; /* Акцентный цвет */
+    margin-bottom: 10px;
+    border: 1px solid #eee; /* Рамка вокруг иконки, как на фото */
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+}
+
+.uv-adv-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ====================== */
+/*       ABOUT SEC        */
+/* ====================== */
+/* --- Общие элементы --- */
+:root {
+    --main-bg: #fdfaf5;     /* Светлый кремовый фон */
+    --accent-color: #a0522d; /* Благородный коричневый акцент */
+    --text-color: #383838;
+}
+
+.uv-container {
+    max-width: 1200px; /* Шире контейнер для лучшего восприятия */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.uv-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+}
+
+.uv-btn:hover {
+    background-color: #8b4513; /* Более темный при наведении */
+    transform: translateY(-2px);
+}
+
+/* --- Секция "О нас" --- */
+.uv-about-sec {
+    padding: 80px 0; /* Увеличил вертикальные отступы */
+    text-align: center;
+    background-color: var(--main-bg); 
+    color: var(--text-color);
+}
+
+.uv-brand {
+    font-family: 'Georgia', serif; /* Более "книжный" шрифт */
+    font-size: 3em; 
+    color: var(--accent-color); /* Акцентный цвет */
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.uv-about-title {
+    font-size: 2.2em; /* Увеличил размер */
+    margin-bottom: 40px;
+    font-weight: 300; /* Сделал тоньше */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Увеличил интервал */
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Декоративная линия под заголовком */
+.uv-about-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.uv-about-columns {
+    display: flex;
+    gap: 50px; /* Увеличил расстояние между колонками */
+    margin: 0 auto;
+    text-align: left;
+}
+
+.uv-about-col {
+    /* width: 50%; - Лучше использовать flex: 1 для гибкости */
+    flex: 1;
+    font-size: 1.1em; /* Сделал текст крупнее для лучшей читаемости */
+    line-height: 1.8; /* Увеличил межстрочный интервал */
+    color: var(--text-color);
+}
+
+
+
+/* --- Стилизация секции "Наши Мероприятия" --- */
+
+.uv-events-sec {
+    padding: 80px 0;
+    background-color: white; /* Светлый фон */
+    text-align: center;
+}
+
+.uv-events-title {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Декоративная линия под заголовком */
+.uv-events-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* Двухколоночный макет */
+.uv-event-row {
+    display: flex;
+    align-items: center; /* Центрирование элементов по вертикали */
+    gap: 40px;
+    text-align: left;
+}
+
+/* Колонка с изображением */
+.uv-event-image {
+    flex: 1; /* Занимает половину доступного места */
+    max-width: 50%; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    border-radius: 8px;
+    overflow: hidden; /* Обрезает изображение по радиусу */
+}
+
+.uv-event-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.uv-event-image:hover .uv-event-img {
+    transform: scale(1.03); /* Небольшое увеличение при наведении */
+}
+
+/* Колонка с контентом (текст и кнопка) */
+.uv-event-content {
+    flex: 1; /* Занимает вторую половину доступного места */
+    padding-left: 20px;
+}
+
+.uv-event-content h3 {
+    font-size: 1.8em;
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.uv-event-content p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+
+
+
+
+
+
+/* --- Секция "Подбор Книг" --- */
+
+.uv-books-selection-sec {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fdfaf5; /* Используем светлый фон, как на дизайне */
+}
+
+.uv-books-selection-title {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--text-color, #383838); /* Используем переменную или дефолт */
+    position: relative;
+}
+
+/* Сетка 3x2 (Три колонки, два ряда) */
+.uv-book-selection-grid {
+    display: grid;
+    /* 3 колонки одинаковой ширины */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Расстояние между элементами, как на макете */
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стиль карточки */
+.uv-book-card {
+    display: block; /* Сделать всю карточку кликабельной */
+    text-decoration: none;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.uv-book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.uv-card-image-wrapper {
+    /* Чтобы изображение занимало всю доступную ширину */
+    width: 100%; 
+    /* Задает фиксированное соотношение сторон для изображений */
+    height: 0; 
+    padding-bottom: 75%; /* 4:3 соотношение (или 100% для квадрата) */
+    overflow: hidden;
+    position: relative;
+}
+
+.uv-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение покрывает контейнер */
+    display: block;
+}
+
+.uv-card-title {
+    font-size: 1.1em;
+    color: var(--text-color, #383838);
+    margin: 15px 15px 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* ====================== */
+/*       PRODUCTS         */
+/* ====================== */
+
+.uv-products-sec {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Добавил отступ для заголовка */
+.uv-products-sec .section-title {
+    margin-bottom: 40px;
+}
+
+.uv-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* Увеличил отступ между карточками */
+    padding: 0 15px;
+}
+
+.uv-product-card {
+    border: none; /* Убрал рамку */
+    background: none; /* Убрал фон */
+    position: relative;
+    padding: 0;
+}
+
+.uv-product-img-wrap {
+    position: relative; /* Изменил на relative, чтобы задать размеры */
+    width: 100%;
+    height: 300px; /* Задал фиксированную высоту для блока с картинкой */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.uv-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.uv-product-discount {
+    position: absolute;
+    background: #9c897a;
+    color: #fff;
+    padding: 3px 8px; /* Уменьшил паддинг */
+    top: 10px;
+    right: 10px; /* Перенес справа */
+    left: auto;
+    font-size: 0.8em;
+}
+
+.uv-product-icons {
+    position: absolute;
+    top: 10px; /* Перенес иконки вверх */
+    right: auto;
+    left: 10px;
+    bottom: auto;
+    display: flex;
+    flex-direction: column; /* Разместил вертикально */
+    gap: 5px;
+}
+
+.uv-product-icons i {
+    background: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.uv-product-info { /* Новый блок для информации о товаре */
+    text-align: center;
+}
+
+.uv-product-title {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.uv-product-price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ====================== */
+/*       THEMES           */
+/* ====================== */
+
+.uv-themes-sec {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+
+.uv-themes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.uv-theme-item {
+    position: relative;
+    height: 150px;
+    display: block; /* Убедимся, что это блочный элемент */
+    overflow: hidden;
+}
+
+.uv-theme-wide {
+    grid-column: span 2;
+    height: 320px;
+}
+
+.uv-theme-item:nth-child(4) { /* Четвертый элемент в макете занимает 2 строки */
+    grid-row: span 2;
+    height: 320px; /* Задал высоту для вертикального элемента */
+}
+
+.uv-theme-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.uv-theme-item:hover .uv-theme-img {
+    transform: scale(1.05); /* Эффект при наведении */
+}
+
+.uv-theme-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* ====================== */
+/*          CTA           */
+/* ====================== */
+
+.uv-cta-sec {
+    padding: 30px 0;
+    background: #f4f0e9;
+    text-align: center;
+}
+
+.uv-cta-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.uv-cta-text {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.uv-cta-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex-grow: 1; /* Позволяет полям занимать место */
+    max-width: 250px;
+}
+
+.uv-cta-btn {
+    background-color: #9c897a;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ====================== */
+/*        FOOTER          */
+/* ====================== */
+
+.uv-footer-wrap {
+    padding: 40px 0; /* Увеличил отступы */
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+.uv-footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.uv-footer-logo img {
+    height: 35px;
+}
+
+.uv-footer-links {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.uv-footer-phone {
+    font-size: 0.9em;
+    color: #333;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.line {
+    height: 3px;
+    background-color: #000;
+    border-radius: 1px;
+}
+.line.wide { width: 30px; }
+.line.medium { width: 24px; }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.show {
+    display: block;
+}
+
+.column-layout {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 120px;
+}
+
+.column h4 {
+    margin: 0 0 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.column-item {
+    padding: 4px 0;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.column-item:hover {
+    background-color: #eee;
+}
+
+.sub-item {
+    margin-left: 15px;
+    font-size: 13px;
+    color: #555;
+}
