@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | BOOKVILLE</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="uv-header-wrap">
+        <div class="uv-header-top">
+            <span class="uv-header-phone">+7 999 140 00 00</span>
+
+            <a href="./index.html" class="uv-header-logo">
+                <img src="./img/logo.png" alt="Bookville">
+            </a>
+
+            <div class="uv-header-icons">
+                <i class="fas fa-search uv-search-toggle"></i>
+                <a href="./favorit.html"><i class="far fa-heart"></i></a>
+                <a href="./korzina.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="uv-mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <nav class="uv-main-nav">
+            <div class="uv-nav-container">
+                <ul class="uv-nav-list">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">
+                            <div class="line wide"></div>
+                            <div class="line medium"></div>
+                            <div class="line wide"></div>
+                            <span>Меню</span>
+                        </button>
+
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="column-layout">
+                                <div class="column">
+                                    <h4>Книги</h4>
+                                    <a href="#" class="column-item">Художественная литература</a>
+                                    <a href="#" class="column-item">Саморазвитие</a>
+                                    <a href="#" class="column-item">Психология</a>
+                                    <a href="#" class="column-item">Философия</a>
+                                    <a href="#" class="column-item">Здоровье</a>
+                                    <a href="#" class="column-item">Эксклюзивные издания</a>
+                                    <a href="#" class="column-item">Детские</a>
+                                    <a href="#" class="column-item sub-item">– для 0 - 3 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 3 - 7 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 7 - 10 лет</a>
+                                    <a href="#" class="column-item">Книги для подростков</a>
+                                    <a href="#" class="column-item">Взрослые</a>
+                                    <a href="#" class="column-item">Подарочные наборы</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Канцелярия</h4>
+                                    <a href="#" class="column-item">Канцелярские товары</a>
+                                    <a href="#" class="column-item">Блокноты</a>
+                                    <a href="#" class="column-item">Тетради</a>
+                                    <a href="#" class="column-item">Планеры и трекеры</a>
+                                    <a href="#" class="column-item">Ручки</a>
+                                    <a href="#" class="column-item">Карандаши и фломастеры</a>
+                                    <a href="#" class="column-item">Сертификаты</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Упаковка</h4>
+                                    <a href="#" class="column-item">Упаковочная бумага</a>
+                                    <a href="#" class="column-item">Коробки</a>
+                                    <a href="#" class="column-item">Ленты</a>
+                                    <a href="#" class="column-item">Конверты</a>
+                                    <a href="#" class="column-item">Открытки</a>
+                                    <a href="#" class="column-item">Пакеты</a>
+                                    <a href="#" class="column-item">Подарочный декор</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li><a href="./in2.html">Подразделы</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./event.html">Мероприятия</a></li>
+                    <li><a href="./discount.html">Скидки</a></li>
+                    <li><a href="./blog.html">Блог</a></li>
+                    <li><a href="./order.html">Доставка и оплата</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                <div class="uv-nav-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <div class="uv-lang-select">
+                        <span>RU</span> <i class="fas fa-angle-down"></i>
+                        <ul class="lang-dropdown">
+                            <li><a href="?lang=ru">RU</a></li>
+                            <li><a href="?lang=kg">KG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Поисковая строка -->
+        <div class="uv-search-overlay">
+            <div class="uv-search-container">
+                <input type="text" class="uv-search-input" placeholder="Поиск книг, авторов, тем...">
+                <button class="uv-search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a>
+                <span>/</span>
+                <span>Мероприятия</span>
+            </div>
+
+            <section class="events-content">
+                <h1 class="page-title">Мероприятия</h1>
+
+                <div class="content-row">
+                    <div class="text-column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua, sed do eiusmod.</p>
+                    </div>
+
+                    <div class="image-column">
+                        <img src="./img/event1.png" alt="Люди на мероприятии" class="event-image large-image">
+                        <div class="small-images">
+                            <img src="./img/event2.png" alt="Лекция" class="event-image small-image">
+                            <img src="./img/event2.png" alt="Спикер" class="event-image small-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="subscription-section">
+        <div class="container subscription-container">
+            <h2>Хотите быть в курсе предстоящих мероприятий?</h2>
+            <p>Подпишитесь на нашу рассылку и вы узнаете первым о главных событиях</p>
+
+            <form class="subscription-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="E-mail" required>
+                <button type="submit">Подписаться на рассылку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="uv-footer-wrap">
+        <div class="uv-container">
+            <div class="uv-footer-grid">
+                <div class="uv-footer-logo">
+                    <img src="./img/logo.png" alt="Bookville">
+                    <p class="uv-footer-description">Книжный магазин с душой. С 2010 года.</p>
+                    <div class="uv-footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Магазин</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./in2.html">Все книги</a></li>
+                        <li><a href="./discount.html">Скидки</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Бестселлеры</a></li>
+                        <li><a href="#">Подарочные издания</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Информация</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./event.html">Мероприятия</a></li>
+                        <li><a href="./order.html">Доставка и оплата</a></li>
+                        <li><a href="./blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-contacts">
+                    <h3>Контакты</h3>
+                    <p class="uv-footer-phone">+7 999 140 00 00</p>
+                    <p class="uv-footer-email">info@bookville.ru</p>
+                    <p class="uv-footer-address">ул. Книжная, 15, Москва</p>
+                    <p class="uv-footer-hours">Ежедневно 10:00 - 22:00</p>
+                </div>
+            </div>
+
+            <div class="uv-footer-bottom">
+                <p>&copy; 2023 BOOKVILLE. Все права защищены.</p>
+                <div class="uv-footer-payments">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

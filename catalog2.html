@@ -1,0 +1,2736 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подборка книг о психологии | BOOKVILLE</title>
+
+    <!-- SEO мета-теги -->
+    <meta name="description"
+        content="Лучшие книги по психологии в магазине Bookville. Подборка книг для саморазвития, психологического здоровья и личностного роста.">
+    <meta name="keywords"
+        content="книги по психологии, психология, саморазвитие, личностный рост, книжный магазин, Bookville">
+    <meta name="author" content="BOOKVILLE">
+    <meta property="og:title" content="Подборка книг о психологии | BOOKVILLE">
+    <meta property="og:description" content="Лучшие книги по психологии в магазине Bookville">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bookville.ru/catalog/psychology">
+
+    <!-- Иконки -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        /* ====================== */
+        /*      CSS ПЕРЕМЕННЫЕ    */
+        /* ====================== */
+        :root {
+            --primary-color: #8B4513;
+            --primary-dark: #5D2906;
+            --primary-light: #A0522D;
+            --secondary-color: #D2691E;
+            --accent-color: #CD853F;
+            --text-color: #333333;
+            --text-light: #666666;
+            --light-gray: #F5F5F5;
+            --medium-gray: #E0E0E0;
+            --border-gray: #D9D9D9;
+            --white: #FFFFFF;
+            --black: #000000;
+            --success: #4CAF50;
+            --error: #F44336;
+            --warning: #FF9800;
+            --info: #2196F3;
+
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --shadow-dark: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+            --transition: all 0.3s ease;
+            --transition-fast: all 0.15s ease;
+            --transition-slow: all 0.5s ease;
+
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+            --border-radius-lg: 12px;
+            --border-radius-circle: 50%;
+
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 48px;
+
+            --focus-outline: 2px solid var(--primary-color);
+            --focus-outline-offset: 2px;
+
+            --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            --font-family-heading: Georgia, 'Times New Roman', Times, serif;
+
+            --max-width-sm: 640px;
+            --max-width-md: 768px;
+            --max-width-lg: 1024px;
+            --max-width-xl: 1200px;
+            --max-width-xxl: 1400px;
+        }
+
+        /* ====================== */
+        /*      БАЗОВЫЕ СТИЛИ     */
+        /* ====================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        main {
+            flex: 1;
+            padding-bottom: var(--spacing-xxl);
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width-xl);
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        /* Типография */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-family-heading);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+            transition: var(--transition);
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 1px solid var(--border-gray);
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: var(--focus-outline);
+            outline-offset: var(--focus-outline-offset);
+            border-color: var(--primary-color);
+        }
+
+        /* Утилитарные классы */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        /* Уведомления */
+        .notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .notification {
+            background: var(--white);
+            color: var(--text-color);
+            padding: 15px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-dark);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideInRight 0.3s ease;
+            border-left: 4px solid;
+            max-width: 400px;
+        }
+
+        .notification-success {
+            border-left-color: var(--success);
+        }
+
+        .notification-error {
+            border-left-color: var(--error);
+        }
+
+        .notification-info {
+            border-left-color: var(--info);
+        }
+
+        .notification-warning {
+            border-left-color: var(--warning);
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        /* ====================== */
+        /*        HEADER         */
+        /* ====================== */
+        .uv-header-wrap {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--white);
+            box-shadow: var(--shadow-light);
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .uv-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-bottom: 1px solid var(--light-gray);
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        .uv-header-phone {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .uv-header-phone:before {
+            content: '📞';
+            font-size: 0.9em;
+        }
+
+        .uv-header-logo {
+            display: block;
+            transition: var(--transition);
+            position: relative;
+            z-index: 1001;
+        }
+
+        .uv-header-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .uv-header-logo img {
+            height: 35px;
+            width: auto;
+            display: block;
+        }
+
+        .uv-header-icons {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .uv-header-icons button,
+        .uv-header-icons a {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--border-radius-circle);
+            transition: var(--transition);
+        }
+
+        .uv-header-icons i {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .uv-header-icons button:hover,
+        .uv-header-icons a:hover {
+            background-color: var(--light-gray);
+        }
+
+        .uv-header-icons button:hover i,
+        .uv-header-icons a:hover i {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        .uv-header-icons button:focus,
+        .uv-header-icons a:focus {
+            outline: var(--focus-outline);
+        }
+
+        .uv-cart-counter {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: var(--border-radius-circle);
+            min-width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            pointer-events: none;
+            padding: 0 var(--spacing-xs);
+        }
+
+        /* Навигация */
+        .uv-main-nav {
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-bottom: 1px solid var(--light-gray);
+            background: var(--white);
+        }
+
+        .uv-nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+        }
+
+        .uv-nav-list {
+            display: flex;
+            gap: var(--spacing-lg);
+            list-style: none;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .uv-nav-list>li {
+            position: relative;
+        }
+
+        .uv-nav-list a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            padding: var(--spacing-xs) 0;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .uv-nav-list a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .uv-nav-list a:hover,
+        .uv-nav-list a:focus {
+            color: var(--primary-color);
+            outline: none;
+        }
+
+        .uv-nav-list a:hover:after,
+        .uv-nav-list a:focus:after {
+            width: 100%;
+        }
+
+        /* Dropdown меню (гамбургер) */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            gap: var(--spacing-xs);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-color);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            transition: var(--transition);
+            align-items: center;
+            flex-direction: column;
+            width: auto;
+            position: relative;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            color: var(--primary-color);
+            outline: var(--focus-outline);
+            outline-offset: 2px;
+        }
+
+        .dropbtn .line {
+            height: 2px;
+            background-color: var(--text-color);
+            border-radius: 1px;
+            transition: var(--transition);
+        }
+
+        .dropbtn .wide {
+            width: 20px;
+        }
+
+        .dropbtn .medium {
+            width: 16px;
+        }
+
+        .dropbtn[aria-expanded="true"] .line,
+        .dropbtn:hover .line,
+        .dropbtn:focus .line {
+            background-color: var(--primary-color);
+        }
+
+        .dropbtn[aria-expanded="true"] .line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+            width: 20px;
+        }
+
+        .dropbtn[aria-expanded="true"] .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .dropbtn[aria-expanded="true"] .line:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+            width: 20px;
+        }
+
+        .dropbtn span {
+            margin-top: var(--spacing-xs);
+            font-size: 0.8rem;
+        }
+
+        /* Выпадающее меню категорий */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--white);
+            min-width: 900px;
+            max-width: 90vw;
+            box-shadow: var(--shadow-dark);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            z-index: 1000;
+            overflow-y: auto;
+            max-height: 70vh;
+            margin-top: var(--spacing-sm);
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            border: 1px solid var(--light-gray);
+        }
+
+        .dropdown-content.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            animation: fadeInDropdown 0.3s ease;
+        }
+
+        @keyframes fadeInDropdown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Кастомный скроллбар для выпадающего меню */
+        .dropdown-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .dropdown-content::-webkit-scrollbar-track {
+            background: var(--light-gray);
+            border-radius: 3px;
+        }
+
+        .dropdown-content::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 3px;
+        }
+
+        .dropdown-content::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Столбцы в выпадающем меню */
+        .column-layout {
+            display: flex;
+            gap: var(--spacing-xl);
+            min-width: 800px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .column h4 {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--light-gray);
+            color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 1;
+            padding-right: var(--spacing-lg);
+        }
+
+        .column-item {
+            display: block;
+            padding: var(--spacing-sm) var(--spacing-lg) var(--spacing-sm) 0;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            line-height: 1.4;
+            border-radius: var(--border-radius-sm);
+            margin-bottom: var(--spacing-xs);
+            position: relative;
+        }
+
+        .column-item:hover,
+        .column-item:focus {
+            color: var(--primary-color);
+            background-color: var(--light-gray);
+            outline: none;
+            padding-left: var(--spacing-lg);
+        }
+
+        .column-item:focus {
+            box-shadow: 0 0 0 2px var(--primary-light);
+        }
+
+        .sub-item {
+            margin-left: var(--spacing-lg);
+            font-size: 0.9rem;
+            color: var(--text-light);
+            padding-left: var(--spacing-lg);
+            border-left: 2px solid var(--light-gray);
+        }
+
+        /* Социальные иконки и выбор языка */
+        .uv-nav-social {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .uv-nav-social a {
+            color: var(--secondary-color);
+            font-size: 1rem;
+            transition: var(--transition);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius-circle);
+            text-decoration: none;
+        }
+
+        .uv-nav-social a:hover,
+        .uv-nav-social a:focus {
+            color: var(--primary-color);
+            background: var(--light-gray);
+            outline: none;
+        }
+
+        .uv-lang-select {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            background: var(--light-gray);
+            min-width: 60px;
+        }
+
+        .uv-lang-select:hover,
+        .uv-lang-select:focus {
+            background: var(--medium-gray);
+            outline: var(--focus-outline);
+            outline-offset: 2px;
+        }
+
+        .uv-lang-select span {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .uv-lang-select i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .uv-lang-select[aria-expanded="true"] i {
+            transform: rotate(180deg);
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--white);
+            border-radius: var(--border-radius-sm);
+            padding: var(--spacing-sm) 0;
+            list-style: none;
+            box-shadow: var(--shadow);
+            display: none;
+            min-width: 80px;
+            z-index: 100;
+            margin-top: var(--spacing-xs);
+            border: 1px solid var(--light-gray);
+        }
+
+        .uv-lang-select[aria-expanded="true"] .lang-dropdown {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lang-dropdown li {
+            margin: 0;
+        }
+
+        .lang-dropdown li a {
+            display: block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .lang-dropdown li a:hover,
+        .lang-dropdown li a:focus {
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            outline: none;
+        }
+
+        /* Поисковая строка */
+        .uv-search-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .uv-search-overlay.show {
+            display: flex;
+            opacity: 1;
+            animation: fadeInOverlay 0.3s ease;
+        }
+
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .uv-search-container {
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+
+        .uv-search-overlay.show .uv-search-container {
+            transform: translateY(0);
+        }
+
+        .uv-search-input {
+            width: 100%;
+            padding: var(--spacing-lg) var(--spacing-xxl) var(--spacing-lg) var(--spacing-xl);
+            font-size: 1.2rem;
+            border: none;
+            border-radius: var(--border-radius);
+            background: var(--white);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            color: var(--text-color);
+        }
+
+        .uv-search-input:focus {
+            outline: var(--focus-outline);
+            outline-offset: 2px;
+            box-shadow: 0 5px 25px rgba(139, 69, 19, 0.3);
+        }
+
+        .uv-search-input::placeholder {
+            color: var(--text-light);
+            opacity: 0.7;
+        }
+
+        .uv-search-close {
+            position: absolute;
+            right: var(--spacing-lg);
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: var(--spacing-sm);
+            transition: var(--transition);
+            border-radius: var(--border-radius-circle);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .uv-search-close:hover,
+        .uv-search-close:focus {
+            color: var(--primary-color);
+            background: var(--light-gray);
+            outline: none;
+        }
+
+        /* ====================== */
+        /*    КАТАЛОГ КНИГ       */
+        /* ====================== */
+        .bookville-catalog-page {
+            max-width: var(--max-width-xl);
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+            font-size: 0.9rem;
+            color: var(--text-light);
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs a {
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumbs .active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .breadcrumbs span {
+            color: var(--medium-gray);
+        }
+
+        .catalog-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: var(--spacing-lg);
+        }
+
+        .catalog-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        .sorting-panel {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+            flex-wrap: wrap;
+        }
+
+        .sort-option {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            color: var(--text-color);
+            font-weight: 500;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            position: relative;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .sort-option:hover {
+            color: var(--primary-color);
+            background: rgba(139, 69, 19, 0.1);
+        }
+
+        .sort-option.active {
+            color: var(--white);
+            background: var(--primary-color);
+        }
+
+        .sort-option.active:hover {
+            background: var(--primary-dark);
+        }
+
+        .price-sort {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .sort-arrow {
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        /* Сетка товаров */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--light-gray);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .favorite-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius-circle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .favorite-button:hover {
+            background: var(--white);
+            transform: scale(1.1);
+        }
+
+        .favorite-button .heart-icon {
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: var(--light-gray);
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-position: center;
+            transition: var(--transition);
+        }
+
+        .favorite-button:hover .heart-icon {
+            background-color: var(--primary-color);
+        }
+
+        .favorite-button.active .heart-icon {
+            background-color: var(--error);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--border-radius-sm);
+            margin-bottom: var(--spacing-md);
+            transition: var(--transition);
+        }
+
+        .product-card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-author {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+
+        .card-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .card-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .add-to-cart-small {
+            width: 40px;
+            height: 40px;
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-small:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        /* Пагинация */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .page-number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            background: var(--light-gray);
+            color: var(--text-color);
+            font-weight: 500;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .page-number:hover {
+            background: var(--primary-light);
+            color: var(--white);
+        }
+
+        .page-number.active {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        /* Блок консультации */
+        .consultation-block {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            color: var(--white);
+            text-align: center;
+            margin-top: var(--spacing-xxl);
+        }
+
+        .consultation-block h2 {
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .consultation-block h2:after {
+            display: none;
+        }
+
+        .consultation-block p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .consultation-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .consultation-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: var(--spacing-lg);
+            border: none;
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .consultation-form input:focus {
+            outline: none;
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .submit-button {
+            padding: var(--spacing-lg) var(--spacing-xl);
+            background: var(--white);
+            color: var(--primary-color);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .submit-button:hover {
+            background: var(--light-gray);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ====================== */
+        /*        FOOTER         */
+        /* ====================== */
+        .uv-footer-wrap {
+            background: linear-gradient(135deg, var(--text-color) 0%, #2a2a2a 100%);
+            color: var(--white);
+            padding: var(--spacing-xxl) 0 var(--spacing-lg);
+            margin-top: auto;
+        }
+
+        .uv-container {
+            width: 100%;
+            max-width: var(--max-width-xl);
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .uv-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .uv-footer-logo img {
+            height: 40px;
+            margin-bottom: var(--spacing-md);
+            filter: brightness(0) invert(1);
+        }
+
+        .uv-footer-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--spacing-lg);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .uv-footer-social {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .uv-footer-social a {
+            color: var(--white);
+            font-size: 1.1rem;
+            opacity: 0.8;
+            transition: var(--transition);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius-circle);
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .uv-footer-social a:hover,
+        .uv-footer-social a:focus {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            outline: none;
+        }
+
+        .uv-footer-nav h3,
+        .uv-footer-contacts h3 {
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .uv-footer-nav h3:after,
+        .uv-footer-contacts h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        .uv-footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .uv-footer-links li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .uv-footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            display: inline-block;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .uv-footer-links a:before {
+            content: '→';
+            position: absolute;
+            left: -20px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .uv-footer-links a:hover,
+        .uv-footer-links a:focus {
+            color: var(--white);
+            padding-left: 20px;
+            outline: none;
+        }
+
+        .uv-footer-links a:hover:before,
+        .uv-footer-links a:focus:before {
+            opacity: 1;
+            left: 0;
+        }
+
+        .uv-footer-contacts p {
+            margin-bottom: var(--spacing-md);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+
+        .uv-footer-contacts p:before {
+            content: '•';
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .uv-footer-phone {
+            font-size: 1.2rem !important;
+            color: var(--white) !important;
+            font-weight: 600;
+        }
+
+        .uv-footer-phone:before {
+            content: '📞' !important;
+            background: none !important;
+        }
+
+        .uv-footer-email:before {
+            content: '✉️' !important;
+            background: none !important;
+        }
+
+        .uv-footer-address:before {
+            content: '📍' !important;
+            background: none !important;
+        }
+
+        .uv-footer-hours:before {
+            content: '🕐' !important;
+            background: none !important;
+        }
+
+        .uv-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+        }
+
+        .uv-footer-payments {
+            display: flex;
+            gap: var(--spacing-md);
+            font-size: 1.8rem;
+        }
+
+        .uv-footer-payments i {
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .uv-footer-payments i:hover {
+            opacity: 1;
+        }
+
+        /* ====================== */
+        /*    АДАПТИВНОСТЬ       */
+        /* ====================== */
+
+        /* Планшеты (до 1024px) */
+        @media (max-width: 1024px) {
+            .column-layout {
+                min-width: auto;
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+
+            .dropdown-content {
+                min-width: 300px;
+                max-width: 95vw;
+                padding: var(--spacing-lg);
+            }
+
+            .uv-nav-list {
+                gap: var(--spacing-md);
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: var(--spacing-md);
+            }
+
+            .consultation-form {
+                flex-direction: column;
+            }
+        }
+
+        /* Мобильные (до 768px) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            .uv-header-top {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--spacing-sm);
+            }
+
+            .uv-header-phone {
+                order: 3;
+                width: 100%;
+                text-align: center;
+                margin-top: var(--spacing-xs);
+                justify-content: center;
+            }
+
+            .uv-main-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--white);
+                z-index: 999;
+                padding: 80px var(--spacing-lg) var(--spacing-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition-slow);
+                overflow-y: auto;
+                display: none;
+            }
+
+            .uv-main-nav.show {
+                display: block;
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .uv-nav-container {
+                flex-direction: column;
+                align-items: stretch;
+                gap: var(--spacing-lg);
+            }
+
+            .uv-nav-list {
+                flex-direction: column;
+                gap: var(--spacing-md);
+                align-items: stretch;
+            }
+
+            .uv-nav-list a {
+                display: block;
+                padding: var(--spacing-md);
+                border-bottom: 1px solid var(--light-gray);
+                font-size: 1rem;
+            }
+
+            .uv-nav-list a:after {
+                display: none;
+            }
+
+            .uv-nav-social {
+                justify-content: center;
+                margin-top: var(--spacing-lg);
+            }
+
+            .uv-mobile-menu-toggle {
+                display: flex !important;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .catalog-title {
+                font-size: 1.8rem;
+            }
+
+            .sorting-panel {
+                flex-direction: column;
+                align-items: stretch;
+                gap: var(--spacing-sm);
+            }
+
+            .sort-option {
+                text-align: center;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--spacing-sm);
+            }
+
+            .product-card {
+                padding: var(--spacing-md);
+            }
+
+            .card-image {
+                height: 160px;
+            }
+
+            .card-name {
+                font-size: 1rem;
+            }
+
+            .card-price {
+                font-size: 1.1rem;
+            }
+
+            .consultation-block {
+                padding: var(--spacing-lg);
+            }
+
+            .uv-footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .uv-footer-links a:before {
+                display: none;
+            }
+
+            .uv-footer-contacts p {
+                justify-content: center;
+            }
+
+            .uv-footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--spacing-md);
+            }
+
+            .dropdown-content {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                max-width: 100%;
+                margin-top: 0;
+                border-radius: 0;
+                padding-top: 80px;
+                z-index: 1001;
+            }
+
+            .dropbtn span {
+                display: none;
+            }
+        }
+
+        /* Малые мобильные (до 480px) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+
+            .uv-header-logo img {
+                height: 30px;
+            }
+
+            .uv-header-icons {
+                gap: var(--spacing-sm);
+            }
+
+            .uv-header-icons button,
+            .uv-header-icons a {
+                width: 36px;
+                height: 36px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pagination {
+                flex-wrap: wrap;
+            }
+
+            .consultation-form input {
+                min-width: 100%;
+            }
+
+            .submit-button {
+                width: 100%;
+            }
+
+            .uv-search-input {
+                font-size: 1rem;
+                padding: var(--spacing-md) var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+            }
+        }
+
+        /* Темная тема (опционально) */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #E0E0E0;
+                --text-light: #B0B0B0;
+                --light-gray: #2A2A2A;
+                --medium-gray: #3A3A3A;
+                --border-gray: #4A4A4A;
+                --white: #1A1A1A;
+                --black: #FFFFFF;
+            }
+
+            body {
+                background-color: #121212;
+            }
+
+            .uv-header-wrap {
+                background-color: #1E1E1E;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .dropdown-content {
+                background: #2A2A2A;
+                border-color: #3A3A3A;
+            }
+
+            .column h4 {
+                background: #2A2A2A;
+            }
+
+            .product-card {
+                background: #2A2A2A;
+                border-color: #3A3A3A;
+            }
+
+            .sorting-panel {
+                background: #2A2A2A;
+            }
+        }
+
+        /* Высокий контраст для доступности */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #8B0000;
+                --primary-dark: #600000;
+                --text-color: #000000;
+                --light-gray: #FFFFFF;
+                --border-gray: #000000;
+            }
+
+            .uv-header-wrap {
+                border-bottom: 3px solid var(--primary-color);
+            }
+
+            .uv-nav-list a {
+                font-weight: 700;
+            }
+
+            button,
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        /* Анимации и микровзаимодействия */
+        @keyframes slideInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(139, 69, 19, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(139, 69, 19, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(139, 69, 19, 0);
+            }
+        }
+
+        /* Кастомный скроллбар для всего сайта */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Лоадер для изображений */
+        .card-image.loading {
+            background: linear-gradient(90deg, var(--light-gray) 25%, var(--medium-gray) 50%, var(--light-gray) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+
+        /* В CSS секцию продукта добавляем: */
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: var(--transition);
+}
+
+.product-card-content {
+    flex: 1;
+    padding: var(--spacing-sm) 0;
+}
+
+/* Убираем подчеркивание у всех ссылок внутри карточки */
+.product-card a {
+    text-decoration: none;
+}
+
+/* Улучшаем hover для всей карточки */
+.product-card:hover .product-card-link {
+    transform: translateY(-2px);
+}
+
+/* Затемняем кнопки при наведении на карточку */
+.product-card:hover .favorite-button,
+.product-card:hover .add-to-cart-small {
+    opacity: 1;
+}
+
+/* Управление всплытием событий */
+.favorite-button,
+.add-to-cart-small {
+    position: relative;
+    z-index: 2;
+}
+
+.product-card-link {
+    position: relative;
+    z-index: 1;
+}
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="uv-header-wrap">
+        <div class="uv-header-top">
+            <span class="uv-header-phone">+7 999 140 00 00</span>
+
+            <a href="./index.html" class="uv-header-logo" aria-label="Bookville - На главную">
+                <img src="./img/logo.png" alt="Bookville" width="150" height="35" loading="lazy">
+            </a>
+
+            <div class="uv-header-icons">
+                <button class="uv-search-toggle" aria-label="Поиск">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="./favorit.html" aria-label="Избранное">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="./korzina.html" class="uv-cart-link" aria-label="Корзина">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="uv-cart-counter">0</span>
+                </a>
+                <button class="uv-mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="uv-main-nav" aria-label="Основная навигация">
+            <div class="uv-nav-container">
+                <ul class="uv-nav-list">
+                    <li class="dropdown">
+                        <button class="dropbtn" aria-label="Открыть меню категорий" aria-expanded="false">
+                            <div class="line wide"></div>
+                            <div class="line medium"></div>
+                            <div class="line wide"></div>
+                            <span>Меню</span>
+                        </button>
+
+                        <div id="myDropdown" class="dropdown-content" aria-hidden="true">
+                            <div class="column-layout">
+                                <div class="column">
+                                    <h4>Книги</h4>
+                                    <a href="#" class="column-item">Художественная литература</a>
+                                    <a href="#" class="column-item">Саморазвитие</a>
+                                    <a href="#" class="column-item">Психология</a>
+                                    <a href="#" class="column-item">Философия</a>
+                                    <a href="#" class="column-item">Здоровье</a>
+                                    <a href="#" class="column-item">Эксклюзивные издания</a>
+                                    <a href="#" class="column-item">Детские</a>
+                                    <a href="#" class="column-item sub-item">– для 0 - 3 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 3 - 7 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 7 - 10 лет</a>
+                                    <a href="#" class="column-item">Книги для подростков</a>
+                                    <a href="#" class="column-item">Взрослые</a>
+                                    <a href="#" class="column-item">Подарочные наборы</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Канцелярия</h4>
+                                    <a href="#" class="column-item">Канцелярские товары</a>
+                                    <a href="#" class="column-item">Блокноты</a>
+                                    <a href="#" class="column-item">Тетради</a>
+                                    <a href="#" class="column-item">Планеры и трекеры</a>
+                                    <a href="#" class="column-item">Ручки</a>
+                                    <a href="#" class="column-item">Карандаши и фломастеры</a>
+                                    <a href="#" class="column-item">Сертификаты</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Упаковка</h4>
+                                    <a href="#" class="column-item">Упаковочная бумага</a>
+                                    <a href="#" class="column-item">Коробки</a>
+                                    <a href="#" class="column-item">Ленты</a>
+                                    <a href="#" class="column-item">Конверты</a>
+                                    <a href="#" class="column-item">Открытки</a>
+                                    <a href="#" class="column-item">Пакеты</a>
+                                    <a href="#" class="column-item">Подарочный декор</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="./in2.html">Подразделы</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./event.html">Мероприятия</a></li>
+                    <li><a href="./discount.html">Скидки</a></li>
+                    <li><a href="./blog.html">Блог</a></li>
+                    <li><a href="./order.html">Доставка и оплата</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                <div class="uv-nav-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <div class="uv-lang-select" role="combobox" aria-expanded="false" aria-label="Выбор языка">
+                        <span>RU</span> <i class="fas fa-angle-down"></i>
+                        <ul class="lang-dropdown" role="listbox">
+                            <li role="option"><a href="?lang=ru">RU</a></li>
+                            <li role="option"><a href="?lang=kg">KG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Поисковая строка -->
+        <div class="uv-search-overlay" aria-hidden="true">
+            <div class="uv-search-container">
+                <input type="text" class="uv-search-input" placeholder="Поиск книг, авторов, тем..."
+                    aria-label="Поле поиска">
+                <button class="uv-search-close" aria-label="Закрыть поиск">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bookville-catalog-page">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <span>/</span>
+                <a href="catalog2.html" class="active">Подборка книг о психологии</a>
+            </div>
+             
+            </div>
+
+            <h1 class="catalog-title">Подборка книг о психологии</h1>
+
+            <div class="sorting-panel">
+                <button class="sort-option active" data-sort="popularity">По популярности</button>
+                <button class="sort-option" data-sort="publisher">По издательству</button>
+                <button class="sort-option price-sort" data-sort="price">По цене <span
+                        class="sort-arrow">↑↓</span></button>
+            </div>
+
+            <div class="product-grid">
+                <!-- Карточки товаров будут сгенерированы JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-number">4</a>
+            </div>
+
+            <div class="consultation-block">
+                <h2>Не можете определиться с выбором?</h2>
+                <p>Закажите бесплатную консультацию с нашим книжным сомелье</p>
+                <form class="consultation-form" id="consultationForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Ваш номер" required pattern="[0-9]{10,}"
+                        title="Введите номер телефона (минимум 10 цифр)">
+                    <button type="submit" class="submit-button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="uv-footer-wrap" aria-label="Подвал сайта">
+        <div class="uv-container">
+            <div class="uv-footer-grid">
+                <div class="uv-footer-logo">
+                    <img src="./img/logo.png" alt="Bookville" width="150" height="35" loading="lazy">
+                    <p class="uv-footer-description">Книжный магазин с душой. С 2010 года.</p>
+                    <div class="uv-footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Магазин</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./in2.html">Все книги</a></li>
+                        <li><a href="./discount.html">Скидки</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Бестселлеры</a></li>
+                        <li><a href="#">Подарочные издания</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Информация</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./event.html">Мероприятия</a></li>
+                        <li><a href="./order.html">Доставка и оплата</a></li>
+                        <li><a href="./blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-contacts">
+                    <h3>Контакты</h3>
+                    <p class="uv-footer-phone">+7 999 140 00 00</p>
+                    <p class="uv-footer-email">info@bookville.ru</p>
+                    <p class="uv-footer-address">ул. Книжная, 15, Москва</p>
+                    <p class="uv-footer-hours">Ежедневно 10:00 - 22:00</p>
+                </div>
+            </div>
+
+            <div class="uv-footer-bottom">
+                <p>&copy; 2023 BOOKVILLE. Все права защищены.</p>
+                <div class="uv-footer-payments" aria-label="Способы оплаты">
+                    <i class="fab fa-cc-visa" aria-hidden="true"></i>
+                    <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+                    <i class="fab fa-cc-paypal" aria-hidden="true"></i>
+                    <i class="fab fa-apple-pay" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ======================
+        //     CATALOG.JS
+        //     Для страницы каталога BOOKVILLE
+        // ======================
+        
+        (function () {
+            'use strict';
+
+            // ========== КОНСТАНТЫ ==========
+            const BOOKS_DATA = [
+                {
+                    id: 1,
+                    name: "К себе нежно",
+                    author: "Ольга Примаченко",
+                    price: 790,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 1",
+                    popularity: 95,
+                    slug: "к себе нежно", // Уникальный идентификатор для URL
+                    description: "Книга о том, как научиться относиться к себе с добротой и заботой...",
+                    category: "Психология",
+                    pages: 320,
+                    year: 2022,
+                    isbn: "978-5-00117-845-6"
+                }, ,
+                {
+                    id: 2,
+                    name: "Сила воли",
+                    author: "Келли Макгонигал",
+                    price: 850,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 2",
+                    popularity: 88
+                },
+                {
+                    id: 3,
+                    name: "Эмоциональный интеллект",
+                    author: "Дэниел Гоулман",
+                    price: 920,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 3",
+                    popularity: 92
+                },
+                {
+                    id: 4,
+                    name: "Поток",
+                    author: "Михай Чиксентмихайи",
+                    price: 780,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 1",
+                    popularity: 85
+                },
+                {
+                    id: 5,
+                    name: "Думай медленно, решай быстро",
+                    author: "Даниэль Канеман",
+                    price: 950,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 2",
+                    popularity: 90
+                },
+                {
+                    id: 6,
+                    name: "Как завоёвывать друзей",
+                    author: "Дейл Карнеги",
+                    price: 650,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 3",
+                    popularity: 98
+                },
+                {
+                    id: 7,
+                    name: "7 навыков высокоэффективных людей",
+                    author: "Стивен Кови",
+                    price: 890,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 1",
+                    popularity: 93
+                },
+                {
+                    id: 8,
+                    name: "Новая земля",
+                    author: "Экхарт Толле",
+                    price: 720,
+                    image: "./img/img_book.jpg",
+                    publisher: "Издательство 2",
+                    popularity: 87
+                }
+            ];
+function renderProductCards(books = BOOKS_DATA) {
+    const productGrid = document.querySelector('.product-grid');
+    if (!productGrid) return;
+
+    productGrid.innerHTML = books.map(book => `
+        <div class="product-card" data-id="${book.id}">
+            <button class="favorite-button ${favorites.some(f => f.id === book.id) ? 'active' : ''}" 
+                    aria-label="${favorites.some(f => f.id === book.id) ? 'Удалить из избранного' : 'Добавить в избранное'}">
+                <span class="heart-icon"></span>
+            </button>
+            
+            <!-- Обертываем изображение и основную информацию в ссылку -->
+            <a href="./product/${book.slug || book.id}" class="product-card-link" 
+               aria-label="Подробнее о книге '${book.name}'">
+                <img src="${book.image}" 
+                     alt="Обложка книги '${book.name}'" 
+                     class="card-image" 
+                     loading="lazy"
+                     width="250"
+                     height="200">
+                <div class="product-card-content">
+                    <p class="card-author">${sanitizeInput(book.author)}</p>
+                    <p class="card-name">${sanitizeInput(book.name)}</p>
+                </div>
+            </a>
+            
+            <div class="card-footer">
+                <span class="card-price">${formatPrice(book.price)}</span>
+                <button class="add-to-cart-small" aria-label="Добавить в корзину">[🛒]</button>
+            </div>
+        </div>
+    `).join('');
+
+    initProductCardEvents();
+}
+
+
+function initProductCardEvents() {
+    initFavoriteButtons();
+    initAddToCartButtons();
+    initProductCardLinks();
+}
+
+function initProductCardLinks() {
+    document.querySelectorAll('.product-card-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Если клик был по кнопке внутри ссылки, не переходить
+            if (e.target.closest('.favorite-button') || 
+                e.target.closest('.add-to-cart-small')) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        });
+    });
+}
+
+function handleFavoriteClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const button = e.currentTarget;
+    const productCard = button.closest('.product-card');
+    const productId = parseInt(productCard.dataset.id);
+    const product = BOOKS_DATA.find(b => b.id === productId);
+
+    if (!product) return;
+
+    const isFavorite = button.classList.contains('active');
+    
+    if (isFavorite) {
+        favorites = favorites.filter(f => f.id !== productId);
+        button.classList.remove('active');
+        button.setAttribute('aria-label', 'Добавить в избранное');
+        showNotification(`"${product.name}" удален из избранного`, 'info');
+    } else {
+        favorites.push(product);
+        button.classList.add('active');
+        button.setAttribute('aria-label', 'Удалить из избранного');
+        showNotification(`"${product.name}" добавлен в избранное`, 'success');
+    }
+
+    saveToStorage('bookvilleFavorites', favorites);
+}
+
+function handleAddToCart(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const button = e.currentTarget;
+    const productCard = button.closest('.product-card');
+    const productId = parseInt(productCard.dataset.id);
+    const product = BOOKS_DATA.find(b => b.id === productId);
+
+    if (!product) return;
+
+    const existingItem = cartItems.find(item => item.id === productId);
+    
+    if (existingItem) {
+        existingItem.quantity = (existingItem.quantity || 1) + 1;
+    } else {
+        cartItems.push({
+            ...product,
+            quantity: 1
+        });
+    }
+
+    saveToStorage('bookvilleCart', cartItems);
+    updateCounters();
+    animateAddToCart(button);
+    showNotification(`"${product.name}" добавлен в корзину`, 'success');
+}
+            // ========== ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ==========
+            let favorites = [];
+            let cartItems = [];
+            let currentSort = 'popularity';
+            let priceSortDirection = 'asc';
+            let currentPage = 1;
+            const itemsPerPage = 8;
+
+            // ========== УТИЛИТАРНЫЕ ФУНКЦИИ ==========
+
+            function getFromStorage(key, defaultValue = []) {
+                try {
+                    const item = localStorage.getItem(key);
+                    return item ? JSON.parse(item) : defaultValue;
+                } catch (error) {
+                    console.error(`Ошибка чтения ${key} из localStorage:`, error);
+                    return defaultValue;
+                }
+            }
+
+            function saveToStorage(key, value) {
+                try {
+                    localStorage.setItem(key, JSON.stringify(value));
+                } catch (error) {
+                    console.error(`Ошибка сохранения ${key} в localStorage:`, error);
+                }
+            }
+
+            function formatPrice(price) {
+                return new Intl.NumberFormat('ru-RU', {
+                    style: 'currency',
+                    currency: 'RUB',
+                    minimumFractionDigits: 0
+                }).format(price).replace('₽', 'P');
+            }
+
+            function sanitizeInput(input) {
+                const div = document.createElement('div');
+                div.textContent = input;
+                return div.innerHTML;
+            }
+
+            function debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
+            // ========== УВЕДОМЛЕНИЯ ==========
+
+            function showNotification(message, type = 'info') {
+                let container = document.querySelector('.notification-container');
+                if (!container) {
+                    container = document.createElement('div');
+                    container.className = 'notification-container';
+                    document.body.appendChild(container);
+                }
+
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+
+                let icon = 'ℹ️';
+                if (type === 'success') icon = '✅';
+                if (type === 'error') icon = '❌';
+                if (type === 'warning') icon = '⚠️';
+
+                notification.innerHTML = `
+                <span class="notification-icon">${icon}</span>
+                <span class="notification-text">${message}</span>
+                <button class="notification-close" aria-label="Закрыть">×</button>
+            `;
+
+                container.appendChild(notification);
+
+                const closeBtn = notification.querySelector('.notification-close');
+                closeBtn.addEventListener('click', () => {
+                    notification.style.animation = 'slideOutRight 0.3s ease';
+                    setTimeout(() => notification.remove(), 300);
+                });
+
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.style.animation = 'slideOutRight 0.3s ease';
+                        setTimeout(() => notification.remove(), 300);
+                    }
+                }, 5000);
+            }
+
+            // ========== ОБНОВЛЕНИЕ СЧЕТЧИКОВ ==========
+
+            function updateCounters() {
+                const cartCounter = document.querySelector('.uv-cart-counter');
+                if (cartCounter) {
+                    const totalItems = cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
+                    cartCounter.textContent = totalItems;
+                    cartCounter.style.display = totalItems > 0 ? 'flex' : 'none';
+                }
+            }
+
+            // ========== РЕНДЕРИНГ КАРТОЧЕК ==========
+
+            function renderProductCards(books = BOOKS_DATA) {
+                const productGrid = document.querySelector('.product-grid');
+                if (!productGrid) return;
+
+                productGrid.innerHTML = books.map(book => `
+                <div class="product-card" data-id="${book.id}">
+                    <button class="favorite-button ${favorites.some(f => f.id === book.id) ? 'active' : ''}" 
+                            aria-label="${favorites.some(f => f.id === book.id) ? 'Удалить из избранного' : 'Добавить в избранное'}">
+                        <span class="heart-icon"></span>
+                    </button>
+                    <img src="${book.image}" 
+                         alt="Обложка книги '${book.name}'" 
+                         class="card-image" 
+                         loading="lazy"
+                         width="250"
+                         height="200">
+                    <p class="card-author">${sanitizeInput(book.author)}</p>
+                    <p class="card-name">${sanitizeInput(book.name)}</p>
+                    <div class="card-footer">
+                        <span class="card-price">${formatPrice(book.price)}</span>
+                        <button class="add-to-cart-small" aria-label="Добавить в корзину">[🛒]</button>
+                    </div>
+                </div>
+            `).join('');
+
+                initProductCardEvents();
+            }
+
+            // ========== ИЗБРАННОЕ ==========
+
+            function initFavoriteButtons() {
+                document.querySelectorAll('.favorite-button').forEach(button => {
+                    button.addEventListener('click', handleFavoriteClick);
+                });
+            }
+
+            function handleFavoriteClick(e) {
+                const button = e.currentTarget;
+                const productCard = button.closest('.product-card');
+                const productId = parseInt(productCard.dataset.id);
+                const product = BOOKS_DATA.find(b => b.id === productId);
+
+                if (!product) return;
+
+                const isFavorite = button.classList.contains('active');
+
+                if (isFavorite) {
+                    favorites = favorites.filter(f => f.id !== productId);
+                    button.classList.remove('active');
+                    button.setAttribute('aria-label', 'Добавить в избранное');
+                    showNotification(`"${product.name}" удален из избранного`, 'info');
+                } else {
+                    favorites.push(product);
+                    button.classList.add('active');
+                    button.setAttribute('aria-label', 'Удалить из избранного');
+                    showNotification(`"${product.name}" добавлен в избранное`, 'success');
+                }
+
+                saveToStorage('bookvilleFavorites', favorites);
+            }
+
+            // ========== КОРЗИНА ==========
+
+            function initAddToCartButtons() {
+                document.querySelectorAll('.add-to-cart-small').forEach(button => {
+                    button.addEventListener('click', handleAddToCart);
+                });
+            }
+
+            function handleAddToCart(e) {
+                const button = e.currentTarget;
+                const productCard = button.closest('.product-card');
+                const productId = parseInt(productCard.dataset.id);
+                const product = BOOKS_DATA.find(b => b.id === productId);
+
+                if (!product) return;
+
+                const existingItem = cartItems.find(item => item.id === productId);
+
+                if (existingItem) {
+                    existingItem.quantity = (existingItem.quantity || 1) + 1;
+                } else {
+                    cartItems.push({
+                        ...product,
+                        quantity: 1
+                    });
+                }
+
+                saveToStorage('bookvilleCart', cartItems);
+                updateCounters();
+                animateAddToCart(button);
+                showNotification(`"${product.name}" добавлен в корзину`, 'success');
+            }
+
+            function animateAddToCart(button) {
+                const originalContent = button.innerHTML;
+                button.innerHTML = '✓';
+                button.style.background = 'var(--success)';
+                button.style.color = 'var(--white)';
+
+                setTimeout(() => {
+                    button.innerHTML = originalContent;
+                    button.style.background = '';
+                    button.style.color = '';
+                }, 1000);
+            }
+
+            // ========== СОРТИРОВКА ==========
+
+            function initSorting() {
+                document.querySelectorAll('.sort-option').forEach(option => {
+                    option.addEventListener('click', handleSortClick);
+                });
+            }
+
+            function handleSortClick(e) {
+                e.preventDefault();
+                const button = e.currentTarget;
+                const sortType = button.dataset.sort;
+
+                document.querySelectorAll('.sort-option').forEach(opt => opt.classList.remove('active'));
+                button.classList.add('active');
+
+                if (sortType === 'price') {
+                    handlePriceSort();
+                } else {
+                    currentSort = sortType;
+                    sortProducts(sortType);
+                }
+            }
+
+            function handlePriceSort() {
+                priceSortDirection = priceSortDirection === 'asc' ? 'desc' : 'asc';
+                const priceSortArrow = document.querySelector('.sort-arrow');
+                if (priceSortArrow) {
+                    priceSortArrow.textContent = priceSortDirection === 'asc' ? '↑' : '↓';
+                }
+                sortProducts('price');
+            }
+
+            function sortProducts(sortType) {
+                let sortedBooks = [...BOOKS_DATA];
+
+                switch (sortType) {
+                    case 'price':
+                        sortedBooks.sort((a, b) =>
+                            priceSortDirection === 'asc' ? a.price - b.price : b.price - a.price
+                        );
+                        break;
+                    case 'publisher':
+                        sortedBooks.sort((a, b) => a.publisher.localeCompare(b.publisher));
+                        break;
+                    case 'popularity':
+                    default:
+                        sortedBooks.sort((a, b) => b.popularity - a.popularity);
+                        break;
+                }
+
+                renderProductCards(sortedBooks);
+                showNotification(`Товары отсортированы`, 'info');
+            }
+
+            // ========== ПАГИНАЦИЯ ==========
+
+            function initPagination() {
+                document.querySelectorAll('.page-number').forEach(page => {
+                    page.addEventListener('click', handlePageClick);
+                });
+            }
+
+            function handlePageClick(e) {
+                e.preventDefault();
+                const pageLink = e.currentTarget;
+                const pageNum = parseInt(pageLink.textContent);
+
+                document.querySelectorAll('.page-number').forEach(p => p.classList.remove('active'));
+                pageLink.classList.add('active');
+                currentPage = pageNum;
+
+                showNotification(`Загружается страница ${pageNum}`, 'info');
+                // Здесь можно добавить логику загрузки данных для страницы
+            }
+
+            // ========== ФОРМА КОНСУЛЬТАЦИИ ==========
+
+            function initConsultationForm() {
+                const form = document.getElementById('consultationForm');
+                if (!form) return;
+
+                form.addEventListener('submit', handleConsultationSubmit);
+            }
+
+            function handleConsultationSubmit(e) {
+                e.preventDefault();
+
+                const nameInput = e.target.querySelector('input[type="text"]');
+                const phoneInput = e.target.querySelector('input[type="tel"]');
+
+                const name = sanitizeInput(nameInput.value.trim());
+                const phone = sanitizeInput(phoneInput.value.trim());
+
+                if (!name || !phone) {
+                    showNotification('Заполните все поля', 'error');
+                    return;
+                }
+
+                if (!/^\d{10,}$/.test(phone.replace(/\D/g, ''))) {
+                    showNotification('Введите корректный номер телефона (минимум 10 цифр)', 'error');
+                    return;
+                }
+
+                // Имитация отправки
+                setTimeout(() => {
+                    showNotification('Заявка отправлена! Мы свяжемся с вами в течение часа.', 'success');
+                    e.target.reset();
+
+                    // Логирование для отладки
+                    console.log('Консультация заказана:', { name, phone: phone.replace(/\D/g, '') });
+                }, 500);
+            }
+
+            // ========== ИНИЦИАЛИЗАЦИЯ ПРОДУКТОВ ==========
+
+            function initProductCardEvents() {
+                initFavoriteButtons();
+                initAddToCartButtons();
+            }
+
+            // ========== HEADER ФУНКЦИОНАЛЬНОСТЬ ==========
+
+            function initHeaderFunctionality() {
+                // Dropdown меню
+                const dropbtn = document.querySelector('.dropbtn');
+                const dropdown = document.getElementById('myDropdown');
+
+                if (dropbtn && dropdown) {
+                    dropbtn.addEventListener('click', function () {
+                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                        this.setAttribute('aria-expanded', !isExpanded);
+                        dropdown.classList.toggle('show');
+                        dropdown.setAttribute('aria-hidden', isExpanded);
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdown.contains(e.target) && !dropbtn.contains(e.target)) {
+                            dropbtn.setAttribute('aria-expanded', 'false');
+                            dropdown.classList.remove('show');
+                            dropdown.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                }
+
+                // Поиск
+                const searchToggle = document.querySelector('.uv-search-toggle');
+                const searchOverlay = document.querySelector('.uv-search-overlay');
+                const searchClose = document.querySelector('.uv-search-close');
+                const searchInput = document.querySelector('.uv-search-input');
+
+                if (searchToggle && searchOverlay) {
+                    searchToggle.addEventListener('click', function () {
+                        searchOverlay.classList.add('show');
+                        searchOverlay.setAttribute('aria-hidden', 'false');
+                        setTimeout(() => searchInput.focus(), 100);
+                    });
+
+                    searchClose.addEventListener('click', function () {
+                        searchOverlay.classList.remove('show');
+                        searchOverlay.setAttribute('aria-hidden', 'true');
+                    });
+
+                    searchInput.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape') {
+                            searchOverlay.classList.remove('show');
+                            searchOverlay.setAttribute('aria-hidden', 'true');
+                        } else if (e.key === 'Enter') {
+                            e.preventDefault();
+                            const query = this.value.trim();
+                            if (query) {
+                                showNotification(`Поиск: "${sanitizeInput(query)}"`, 'info');
+                                // Реализация поиска
+                            }
+                            searchOverlay.classList.remove('show');
+                            searchOverlay.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                }
+
+                // Мобильное меню
+                const mobileMenuToggle = document.querySelector('.uv-mobile-menu-toggle');
+                const mainNav = document.querySelector('.uv-main-nav');
+
+                if (mobileMenuToggle && mainNav) {
+                    mobileMenuToggle.addEventListener('click', function () {
+                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                        this.setAttribute('aria-expanded', !isExpanded);
+                        mainNav.classList.toggle('show');
+                    });
+                }
+
+                // Выбор языка
+                const langSelect = document.querySelector('.uv-lang-select');
+                if (langSelect) {
+                    langSelect.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                        this.setAttribute('aria-expanded', !isExpanded);
+                    });
+
+                    document.addEventListener('click', function () {
+                        langSelect.setAttribute('aria-expanded', 'false');
+                    });
+                }
+            }
+
+            // ========== ИНИЦИАЛИЗАЦИЯ ВСЕГО ==========
+
+            function initAll() {
+                // Загрузка данных из localStorage
+                favorites = getFromStorage('bookvilleFavorites', []);
+                cartItems = getFromStorage('bookvilleCart', []);
+
+                // Инициализация
+                updateCounters();
+                renderProductCards();
+                initSorting();
+                initPagination();
+                initConsultationForm();
+                initHeaderFunctionality();
+
+                // Отложенная загрузка изображений
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                if (img.dataset.src) {
+                                    img.src = img.dataset.src;
+                                    img.removeAttribute('data-src');
+                                    img.classList.remove('lazy');
+                                }
+                                imageObserver.unobserve(img);
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('img[data-src]').forEach(img => {
+                        imageObserver.observe(img);
+                    });
+                }
+            }
+
+            // Запуск при загрузке DOM
+            document.addEventListener('DOMContentLoaded', initAll);
+
+            // Экспорт для отладки
+            window.BookvilleCatalog = {
+                getFavorites: () => [...favorites],
+                getCartItems: () => [...cartItems],
+                clearCart: () => {
+                    cartItems = [];
+                    saveToStorage('bookvilleCart', cartItems);
+                    updateCounters();
+                    showNotification('Корзина очищена', 'info');
+                },
+                clearFavorites: () => {
+                    favorites = [];
+                    saveToStorage('bookvilleFavorites', favorites);
+                    renderProductCards();
+                    showNotification('Избранное очищено', 'info');
+                }
+            };
+
+        })();
+    </script>
+</body>
+
+</html>

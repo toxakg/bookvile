@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | BOOKVILLE - Книжный магазин с душой</title>
+    <meta name="description" content="BOOKVILLE - книжный магазин с уникальной подборкой литературы, канцелярии и подарочных наборов. С 2010 года.">
+    <meta name="keywords" content="книги, литература, книжный магазин, BOOKVILLE, подарки, канцелярия, саморазвитие, психология">
+    <meta property="og:title" content="BOOKVILLE - Книжный магазин с душой">
+    <meta property="og:description" content="Откройте для себя мир книг с BOOKVILLE">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://i.pinimg.com">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body>
+    <!-- Пользователи без JavaScript -->
+    <noscript>
+        <div class="noscript-warning">
+            <p>Для полной функциональности сайта рекомендуется включить JavaScript</p>
+        </div>
+        <style>
+            .uv-product-icons,
+            .uv-slide-arrow,
+            .uv-search-toggle,
+            .dropdown,
+            .uv-lang-select {
+                display: none !important;
+            }
+            .uv-nav-container {
+                display: flex !important;
+            }
+            .dropdown-content {
+                position: static !important;
+                display: block !important;
+                box-shadow: none !important;
+                max-height: none !important;
+                min-width: auto !important;
+                padding: 10px !important;
+            }
+        </style>
+    </noscript>
+
+    <!-- HEADER -->
+    <header class="uv-header-wrap">
+        <div class="uv-header-top">
+            <span class="uv-header-phone">+7 999 140 00 00</span>
+
+            <a href="./index.html" class="uv-header-logo" aria-label="Bookville - На главную">
+                <img src="./img/logo.png" alt="Bookville" width="150" height="35">
+            </a>
+
+            <div class="uv-header-icons">
+                <button class="uv-search-toggle" aria-label="Поиск">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="./favorit.html" aria-label="Избранное">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="./korzina.html" class="uv-cart-link" aria-label="Корзина">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="uv-cart-counter">0</span>
+                </a>
+                <button class="uv-mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="uv-main-nav" aria-label="Основная навигация">
+            <div class="uv-nav-container">
+                <ul class="uv-nav-list">
+                    <li class="dropdown">
+                        <button class="dropbtn" aria-label="Открыть меню категорий" aria-expanded="false">
+                            <div class="line wide"></div>
+                            <div class="line medium"></div>
+                            <div class="line wide"></div>
+                            <span>Меню</span>
+                        </button>
+
+                        <div id="myDropdown" class="dropdown-content" aria-hidden="true">
+                            <div class="column-layout">
+                                <div class="column">
+                                    <h4>Книги</h4>
+                                    <a href="#" class="column-item">Художественная литература</a>
+                                    <a href="#" class="column-item">Саморазвитие</a>
+                                    <a href="#" class="column-item">Психология</a>
+                                    <a href="#" class="column-item">Философия</a>
+                                    <a href="#" class="column-item">Здоровье</a>
+                                    <a href="#" class="column-item">Эксклюзивные издания</a>
+                                    <a href="#" class="column-item">Детские</a>
+                                    <a href="#" class="column-item sub-item">– для 0 - 3 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 3 - 7 лет</a>
+                                    <a href="#" class="column-item sub-item">– для 7 - 10 лет</a>
+                                    <a href="#" class="column-item">Книги для подростков</a>
+                                    <a href="#" class="column-item">Взрослые</a>
+                                    <a href="#" class="column-item">Подарочные наборы</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Канцелярия</h4>
+                                    <a href="#" class="column-item">Канцелярские товары</a>
+                                    <a href="#" class="column-item">Блокноты</a>
+                                    <a href="#" class="column-item">Тетради</a>
+                                    <a href="#" class="column-item">Планеры и трекеры</a>
+                                    <a href="#" class="column-item">Ручки</a>
+                                    <a href="#" class="column-item">Карандаши и фломастеры</a>
+                                    <a href="#" class="column-item">Сертификаты</a>
+                                </div>
+
+                                <div class="column">
+                                    <h4>Упаковка</h4>
+                                    <a href="#" class="column-item">Упаковочная бумага</a>
+                                    <a href="#" class="column-item">Коробки</a>
+                                    <a href="#" class="column-item">Ленты</a>
+                                    <a href="#" class="column-item">Конверты</a>
+                                    <a href="#" class="column-item">Открытки</a>
+                                    <a href="#" class="column-item">Пакеты</a>
+                                    <a href="#" class="column-item">Подарочный декор</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="./in2.html">Подразделы</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./event.html">Мероприятия</a></li>
+                    <li><a href="./discount.html">Скидки</a></li>
+                    <li><a href="./blog.html">Блог</a></li>
+                    <li><a href="./order.html">Доставка и оплата</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                <div class="uv-nav-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <div class="uv-lang-select" role="combobox" aria-expanded="false" aria-label="Выбор языка">
+                        <span>RU</span> <i class="fas fa-angle-down"></i>
+                        <ul class="lang-dropdown" role="listbox">
+                            <li role="option"><a href="?lang=ru">RU</a></li>
+                            <li role="option"><a href="?lang=kg">KG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Поисковая строка -->
+        <div class="uv-search-overlay" aria-hidden="true">
+            <div class="uv-search-container">
+                <input type="text" 
+                       class="uv-search-input" 
+                       placeholder="Поиск книг, авторов, тем..."
+                       aria-label="Поле поиска">
+                <button class="uv-search-close" aria-label="Закрыть поиск">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="uv-hero-slider" aria-label="Промо-слайдер">
+            <div class="uv-slider-container" role="region" aria-label="Слайдер с промо-акциями" aria-live="polite">
+                <div class="uv-slide-item active" aria-hidden="false">
+                    <picture>
+                        <source srcset="./img/Mask Group.webp" type="image/webp">
+                        <img src="./img/Mask Group.png" 
+                             class="uv-slide-img" 
+                             alt="Новая коллекция осени"
+                             loading="eager"
+                             width="1200"
+                             height="500">
+                    </picture>
+                    <div class="uv-slide-content">
+                        <h2>Новая коллекция осени</h2>
+                        <p>Откройте для себя лучшие книги сезона</p>
+                        <a href="#" class="uv-btn" aria-label="Смотреть новую коллекцию">Смотреть</a>
+                    </div>
+                </div>
+                <div class="uv-slide-item" aria-hidden="true">
+                    <picture>
+                        <source srcset="https://i.pinimg.com/736x/0f/da/83/0fda83dc72103e37993994d252015659.jpg?format=webp" type="image/webp">
+                        <img src="https://i.pinimg.com/736x/0f/da/83/0fda83dc72103e37993994d252015659.jpg"
+                            class="uv-slide-img" 
+                            alt="Скидки на книги по психологии"
+                            loading="lazy"
+                            width="1200"
+                            height="500">
+                    </picture>
+                    <div class="uv-slide-content">
+                        <h2>Скидки до 30%</h2>
+                        <p>На книги по психологии и саморазвитию</p>
+                        <a href="#" class="uv-btn" aria-label="Подробнее о скидках">Подробнее</a>
+                    </div>
+                </div>
+                <div class="uv-slide-item" aria-hidden="true">
+                    <picture>
+                        <source srcset="https://i.pinimg.com/736x/ab/b9/63/abb963b8a650f2bb511421adc9086bc6.jpg?format=webp" type="image/webp">
+                        <img src="https://i.pinimg.com/736x/ab/b9/63/abb963b8a650f2bb511421adc9086bc6.jpg"
+                            class="uv-slide-img" 
+                            alt="Новые поступления книг"
+                            loading="lazy"
+                            width="1200"
+                            height="500">
+                    </picture>
+                    <div class="uv-slide-content">
+                        <h2>Новые поступления</h2>
+                        <p>Более 200 новых книг уже в магазине</p>
+                        <a href="#" class="uv-btn" aria-label="Исследовать новые поступления">Исследовать</a>
+                    </div>
+                </div>
+
+                <button class="uv-slide-arrow uv-slide-arrow-left" aria-label="Предыдущий слайд">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="uv-slide-arrow uv-slide-arrow-right" aria-label="Следующий слайд">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="uv-slider-dots" role="tablist" aria-label="Навигация по слайдам">
+                    <button class="uv-slider-dot active" 
+                            role="tab" 
+                            aria-label="Слайд 1" 
+                            aria-selected="true"
+                            data-slide="0"></button>
+                    <button class="uv-slider-dot" 
+                            role="tab" 
+                            aria-label="Слайд 2" 
+                            aria-selected="false"
+                            data-slide="1"></button>
+                    <button class="uv-slider-dot" 
+                            role="tab" 
+                            aria-label="Слайд 3" 
+                            aria-selected="false"
+                            data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANTAGES -->
+        <section class="uv-advantages-sec" aria-labelledby="advantages-title">
+            <div class="uv-advantages-list">
+                <div class="uv-adv-item">
+                    <div class="uv-adv-icon-wrapper">
+                        <i class="fas fa-book-open uv-adv-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="uv-adv-text">Консультация книжного сомелье</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <div class="uv-adv-icon-wrapper">
+                        <i class="fas fa-truck uv-adv-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="uv-adv-text">Быстрая доставка</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <div class="uv-adv-icon-wrapper">
+                        <i class="fas fa-gift uv-adv-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="uv-adv-text">Уникальные подборки книг</p>
+                </div>
+
+                <div class="uv-adv-item">
+                    <div class="uv-adv-icon-wrapper">
+                        <i class="fas fa-ribbon uv-adv-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="uv-adv-text">Эстетическая упаковка</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT COMPANY -->
+        <section class="uv-about-sec" aria-labelledby="about-title">
+            <div class="uv-container">
+                <h1 class="uv-brand">BOOKVILLE</h1>
+
+                <h2 id="about-title" class="uv-about-title">О нашей компании</h2>
+
+                <div class="uv-about-columns">
+                    <div class="uv-about-col">
+                        <p><strong>Наш Основательный Принцип:</strong> Мы верим, что каждая книга должна находить своего
+                            читателя. Наша команда тщательно отбирает литературу, чтобы предложить вам только
+                            качественные издания, которые вдохновляют, развивают и радуют.</p>
+                    </div>
+                    <div class="uv-about-col">
+                        <p><strong>Наша Миссия:</strong> Создать пространство, где каждый сможет найти книгу по душе. Мы
+                            гарантируем высокое качество обслуживания, индивидуальный подход и широкий ассортимент
+                            литературы на любой вкус.</p>
+                    </div>
+                </div>
+                <a href="./about.html" class="uv-btn" aria-label="Узнать больше о компании">Узнать больше</a>
+            </div>
+        </section>
+
+        <!-- POPULAR PRODUCTS -->
+        <section class="uv-products-sec" aria-labelledby="popular-title">
+            <div class="uv-container">
+                <h2 id="popular-title" class="section-title">Популярные товары</h2>
+                <div class="uv-product-grid" id="popular-products" role="list" aria-label="Список популярных товаров">
+                    <!-- Продукты будут загружены через JavaScript -->
+                </div>
+                <div class="uv-section-footer">
+                    <a href="./in2.html" class="uv-btn uv-btn-outline" aria-label="Посмотреть все товары">Смотреть все</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCOUNTS -->
+        <section class="uv-products-sec uv-discounts-sec" aria-labelledby="discounts-title">
+            <div class="uv-container">
+                <h2 id="discounts-title" class="section-title">Скидки</h2>
+                <div class="uv-product-grid" id="discount-products" role="list" aria-label="Список товаров со скидками">
+                    <!-- Продукты будут загружены через JavaScript -->
+                </div>
+                <div class="uv-section-footer">
+                    <a href="./discount.html" class="uv-btn uv-btn-outline" aria-label="Посмотреть все скидки">Все скидки</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECOMMENDATIONS -->
+        <section class="uv-products-sec uv-recommendations-sec" aria-labelledby="recommendations-title">
+            <div class="uv-container">
+                <h2 id="recommendations-title" class="section-title">BOOKVILLE рекомендует</h2>
+                <div class="uv-product-grid" id="recommended-products" role="list" aria-label="Список рекомендованных товаров">
+                    <!-- Продукты будут загружены через JavaScript -->
+                </div>
+                <div class="uv-section-footer">
+                    <a href="#" class="uv-btn uv-btn-outline" aria-label="Больше рекомендаций">Больше рекомендаций</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="uv-events-sec" aria-labelledby="events-title">
+            <div class="uv-container">
+                <h2 id="events-title" class="uv-events-title">Наши Мероприятия</h2>
+
+                <div class="uv-event-row">
+                    <div class="uv-event-image">
+                        <picture>
+                            <source srcset="./img/blogimg8.png" type="image/webp">
+                            <img src="./img/blogimg8.png" 
+                                 alt="Литературный вечер в книжном магазине" 
+                                 class="uv-event-img"
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                        </picture>
+                    </div>
+
+                    <div class="uv-event-content">
+                        <h3>О наших мероприятиях</h3>
+                        <p>
+                            Мы регулярно проводим литературные вечера, встречи с авторами, мастер-классы и книжные
+                            клубы.
+                            Это отличная возможность погрузиться в мир литературы, познакомиться с интересными людьми
+                            и обсудить любимые книги в теплой атмосфере.
+                        </p>
+                        <p>
+                            Наши мероприятия подходят как для опытных книголюбов, так и для тех, кто только начинает
+                            свой путь в мире литературы. Присоединяйтесь к нашему сообществу!
+                        </p>
+                        <a href="./event.html" class="uv-btn" aria-label="Подробнее о мероприятиях">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK SELECTIONS -->
+        <section class="uv-books-selection-sec" aria-labelledby="selections-title">
+            <div class="uv-container">
+                <h2 id="selections-title" class="uv-books-selection-title">Подбор книг для Вас</h2>
+
+                <div class="uv-book-selection-grid">
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг для уютного вечера, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/knigi-zima-670x351 1.png" type="image/webp">
+                                <img src="./img/knigi-zima-670x351 1.png" 
+                                     alt="Обложка книги для уютного вечера" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">Для уютного вечера</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг для проактивных родителей, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/Mask Group-11.webp" type="image/webp">
+                                <img src="./img/Mask Group 11.png" 
+                                     alt="Обложка книги для родителей" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">Для проактивных родителей</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг о психологии, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/Mask Group-1.webp" type="image/webp">
+                                <img src="./img/Mask Group (1).png" 
+                                     alt="Обложка книги о психологии" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">О психологии</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг для руководителя, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/Mask Group-4.webp" type="image/webp">
+                                <img src="./img/Mask Group (4).png" 
+                                     alt="Обложка книги для руководителя" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">Для руководителя</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг о здоровье, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/Mask Group-3.webp" type="image/webp">
+                                <img src="./img/Mask Group (3).png" 
+                                     alt="Обложка книги о здоровье" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">О здоровье</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+
+                    <a href="#" class="uv-book-card" aria-label="Подборка книг для любознаек, 15 книг">
+                        <div class="uv-card-image-wrapper">
+                            <picture>
+                                <source srcset="./img/Mask Group-2.webp" type="image/webp">
+                                <img src="./img/Mask Group (2).png" 
+                                     alt="Обложка книги для любознаек" 
+                                     class="uv-card-img"
+                                     loading="lazy"
+                                     width="300"
+                                     height="200">
+                            </picture>
+                        </div>
+                        <h3 class="uv-card-title">Для любознаек</h3>
+                        <span class="uv-card-count">15 книг</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="uv-newsletter-sec" aria-labelledby="newsletter-title">
+            <div class="uv-container">
+                <div class="uv-newsletter-content">
+                    <h2 id="newsletter-title">Подпишитесь на рассылку</h2>
+                    <p>Узнавайте первыми о новых поступлениях, скидках и мероприятиях</p>
+                    <form class="uv-newsletter-form" aria-label="Форма подписки на рассылку">
+                        <input type="email" 
+                               placeholder="Ваш email" 
+                               required
+                               aria-label="Введите email для подписки">
+                        <button type="submit" class="uv-btn" aria-label="Подписаться на рассылку">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="uv-cta-sec" aria-labelledby="cta-title">
+            <div class="uv-container">
+                <div class="uv-cta-box">
+                    <p id="cta-title" class="uv-cta-text">Нужна помощь с подбором книги?</p>
+                    <form class="uv-cta-form" id="ctaForm" aria-label="Форма помощи с подбором книги">
+                        <input type="text" 
+                               class="uv-cta-input" 
+                               placeholder="Ваше имя" 
+                               required
+                               aria-label="Введите ваше имя">
+                        <input type="tel" 
+                               class="uv-cta-input" 
+                               placeholder="Телефон" 
+                               required
+                               aria-label="Введите ваш телефон">
+                        <button type="submit" class="uv-cta-btn" aria-label="Отправить запрос">Отправить</button>
+                    </form>
+                    <p class="uv-cta-note">Наш книжный сомелье свяжется с вами в течение 24 часов</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="uv-footer-wrap" aria-label="Подвал сайта">
+        <div class="uv-container">
+            <div class="uv-footer-grid">
+                <div class="uv-footer-logo">
+                    <img src="./img/logo.png" alt="Bookville" width="150" height="35">
+                    <p class="uv-footer-description">Книжный магазин с душой. С 2010 года.</p>
+                    <div class="uv-footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Магазин</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./in2.html">Все книги</a></li>
+                        <li><a href="./discount.html">Скидки</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Бестселлеры</a></li>
+                        <li><a href="#">Подарочные издания</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-nav">
+                    <h3>Информация</h3>
+                    <ul class="uv-footer-links">
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./event.html">Мероприятия</a></li>
+                        <li><a href="./order.html">Доставка и оплата</a></li>
+                        <li><a href="./blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="uv-footer-contacts">
+                    <h3>Контакты</h3>
+                    <p class="uv-footer-phone">+7 999 140 00 00</p>
+                    <p class="uv-footer-email">info@bookville.ru</p>
+                    <p class="uv-footer-address">ул. Книжная, 15, Москва</p>
+                    <p class="uv-footer-hours">Ежедневно 10:00 - 22:00</p>
+                </div>
+            </div>
+
+            <div class="uv-footer-bottom">
+                <p>&copy; 2023 BOOKVILLE. Все права защищены.</p>
+                <div class="uv-footer-payments" aria-label="Способы оплаты">
+                    <i class="fab fa-cc-visa" aria-hidden="true"></i>
+                    <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+                    <i class="fab fa-cc-paypal" aria-hidden="true"></i>
+                    <i class="fab fa-apple-pay" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Загрузка скрипта с отложенной загрузкой -->
+    <script src="./index.js" defer></script>
+    
+    <!-- Инициализация Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./sw.js').then(function(registration) {
+                    console.log('ServiceWorker зарегистрирован с областью видимости: ', registration.scope);
+                }, function(err) {
+                    console.log('Ошибка регистрации ServiceWorker: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
